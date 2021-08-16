@@ -1,0 +1,17 @@
+To make .a files:
+
+gcc -Wall -Wextra -Werror -c -o file1.c file1.o
+gcc -Wall -Wextra -Werror -c -o file2.c file2.o
+..
+gcc -Wall -Wextra -Werror -c -o filex.c filex.o
+ar rcs  lib1.a file1.o file2.o ... filex.o
+(rm *.o)
+
+You can add new .o files to an existing .a file, but you cannot combine .a files. 
+
+Thus for libftprintf include all *.c files of libft and combine together with libftprintf's files. 
+
+Read this as an introduction to variadic functions:
+https://www.thegeekstuff.com/2017/05/c-variadic-functions/
+
+To use another library (ie, libftf)
