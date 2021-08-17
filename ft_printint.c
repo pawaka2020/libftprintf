@@ -31,8 +31,9 @@ void ft_printint(int i, int *strlen)
 	if(i < 0) 
 	{ 
 		i = -i;
-		ft_putchar('-');
-		*strlen += 1; 
+		// ft_putchar('-');
+		// *strlen += 1;
+		*strlen += ft_putchar('-'); 
 	}
 	*strlen += ft_nbrlen(i);
 	ft_putnbr(i); 

@@ -11,10 +11,11 @@
 # include<stdarg.h>
 //
 int 		ft_printf(const char *, ...);
-void	ft_putchar(char c);
+int		ft_putchar(char c);
 void	ft_printchar(int i, int *strlen);
 void	ft_printint(int i, int *strlen);
 void	ft_printstr(char *str, int *strlen);
+void	ft_printptr(void *ptr, int *strlen);
 
 
 #endif

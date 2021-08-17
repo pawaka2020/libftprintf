@@ -1,4 +1,4 @@
-#include<stdio.h> 
+d#include<stdio.h> 
 #include<stdarg.h>						
 
 void Myprintf(char *,...); 				//Our printf function
