@@ -1,6 +1,6 @@
 #include "libftprintf.h"
-
-static void	ft_putnbr(int n)
+#include <stdio.h>
+static void	ft_putnbr(long n)
 {
 	if(n >= 10)
 	{
@@ -11,9 +11,9 @@ static void	ft_putnbr(int n)
 		ft_putchar(n + '0');
 }
 
-static int	ft_nbrlen(int n)
+static long	ft_nbrlen(long n)
 {
-	int res;
+	long res;
 
 	res = 0;
 	if (n == 0)
@@ -23,18 +23,18 @@ static int	ft_nbrlen(int n)
 		n /= 10;
 		res++;
 	}
+	//printf("res = %lu\n", res);
 	return (res);
 }
-
-void ft_printint(int i, int *strlen)
+//must use long instead of int
+void ft_printint(long i, int *strlen)
 {
 	if(i < 0) 
 	{ 
 		i = -i;
-		// ft_putchar('-');
-		// *strlen += 1;
 		*strlen += ft_putchar('-'); 
 	}
+	//printf("TEST");
 	*strlen += ft_nbrlen(i);
 	ft_putnbr(i); 
 }

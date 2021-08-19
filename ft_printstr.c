@@ -2,10 +2,10 @@
 
 void ft_printstr(char *str, int *strlen)
 {
+	if (str == 0)
+		str = "(null)";
 	while (*str)
 	{
-		// ft_putchar(*str);
-		// *strlen += 1;
 		*strlen += ft_putchar(*str);
 		str++;
 	}
