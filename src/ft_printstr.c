@@ -1,6 +1,6 @@
 #include "libftprintf.h"
 
-void ft_printstr(char *str, int *strlen)
+void	ft_printstr(char *str, int *strlen)
 {
 	if (str == 0)
 		str = "(null)";

@@ -1,6 +1,6 @@
 #include "libftprintf.h"
 
-int ft_partof(char c, char *str)
+int	ft_partof(char c, char *str)
 {
 	while (*str)
 	{

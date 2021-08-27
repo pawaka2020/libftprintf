@@ -1,10 +1,10 @@
 #include "libftprintf.h"
 
-int ft_printf(const char *str, ...) 
-{ 
-	int	strlen;
-	va_list arg;
-	char c;
+int	ft_printf(const char *str, ...)
+{
+	int		strlen;
+	va_list	arg;
+	char	c;
 
 	strlen = 0;
 	va_start(arg, str);
@@ -25,13 +25,4 @@ int ft_printf(const char *str, ...)
 	}
 	va_end(arg);
 	return (strlen);
-} 
-
-// #include <stdio.h>
-// int	main()
-// {
-//     printf(" %-10d \n", 123);
-//     printf(" %03d \n", 123);
-//     printf(" %-#10x \n", 123);  
-//     printf(" %#x \n", 123);
-// }
+}

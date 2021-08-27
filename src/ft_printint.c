@@ -2,7 +2,7 @@
 #include <stdio.h>
 static void	ft_putnbr(long n)
 {
-	if(n >= 10)
+	if (n >= 10)
 	{
 		ft_putnbr(n / 10);
 		ft_putnbr(n % 10);
@@ -13,7 +13,7 @@ static void	ft_putnbr(long n)
 
 static long	ft_nbrlen(long n)
 {
-	long res;
+	long	res;
 
 	res = 0;
 	if (n == 0)
@@ -23,18 +23,16 @@ static long	ft_nbrlen(long n)
 		n /= 10;
 		res++;
 	}
-	//printf("res = %lu\n", res);
 	return (res);
 }
-//must use long instead of int
-void ft_printint(long i, int *strlen)
+
+void	ft_printint(long i, int *strlen)
 {
-	if(i < 0) 
-	{ 
+	if (i < 0)
+	{
 		i = -i;
-		*strlen += ft_putchar('-'); 
+		*strlen += ft_putchar('-');
 	}
-	//printf("TEST");
 	*strlen += ft_nbrlen(i);
-	ft_putnbr(i); 
+	ft_putnbr(i);
 }

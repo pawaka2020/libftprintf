@@ -1,8 +1,6 @@
 #include "libftprintf.h"
 
-void ft_printchar(int i, int *strlen)
+void	ft_printchar(int i, int *strlen)
 {
-	// *strlen += 1;
-	// ft_putchar(i);
 	*strlen += ft_putchar(i);
 }

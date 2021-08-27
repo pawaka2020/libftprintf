@@ -2,7 +2,7 @@
 
 void	ft_putnbr_base(unsigned long nbr, char *base, int *res)
 {
-	unsigned int baselen;
+	unsigned int	baselen;
 
 	baselen = ft_strlen(base);
 	if (nbr >= baselen)
@@ -14,6 +14,5 @@ void	ft_putnbr_base(unsigned long nbr, char *base, int *res)
 	{
 		*res += 1;
 		write(1, base + nbr, 1);
-	}
-	
+	}	
 }

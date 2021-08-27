@@ -1,6 +1,6 @@
 #include "libftprintf.h"
 
-void ft_printspec1(char c, va_list arg, int *strlen)
+void	ft_printspec1(char c, va_list arg, int *strlen)
 {
 	if (c == 'c')
 		ft_printchar(va_arg(arg, int), strlen);

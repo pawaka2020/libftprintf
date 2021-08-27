@@ -9,7 +9,6 @@
 //for using va_start, va_arg, va_copy, va_end
 //ft_printf is a variadic function
 # include<stdarg.h>
-//
 int		ft_printf(const char *str, ...);
 int		ft_putchar(char c);
 void	ft_printchar(int i, int *strlen);
@@ -22,7 +21,7 @@ void	ft_putnbr_base(unsigned long nbr, char *base, int *res);
 void	ft_printhexa(long i, int *strlen);
 void	ft_printbighexa(long i, int *strlen);
 int		ft_partof(char c, char *str);
-void 	ft_printspec1(char c, va_list arg, int *strlen);
-void 	ft_printspec2(char c, va_list arg, int *strlen);
+void	ft_printspec1(char c, va_list arg, int *strlen);
+void	ft_printspec2(char c, va_list arg, int *strlen);
 
 #endif
