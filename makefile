@@ -11,7 +11,7 @@ fclean: clean
 re: fclean all
 t: re
 	make clean
-	gcc ft_printf.c libftprintf.a
+	gcc src/ft_printf.c libftprintf.a
 	clear
 	./a.out	
 .PHONY: all clean fclean re t

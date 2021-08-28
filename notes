@@ -17,3 +17,5 @@ https://www.thegeekstuff.com/2017/05/c-variadic-functions/
 To use another library (ie, libftf)
 
 int        ft_printf(const char *format, ...) attribute((format(printf, 1, 2)));
+
+https://github.com/Mazoise/42TESTERS-PRINTF

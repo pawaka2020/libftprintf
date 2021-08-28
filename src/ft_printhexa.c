@@ -1,10 +1,9 @@
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-void	ft_printhexa(long i, int *strlen)
+void	ft_printhexa(unsigned int i, int *strlen)
 {
-	if (i < 0)
-	{
+	if (i >= 4294967295)
 		ft_printstr("ffffffff", strlen);
-	}
-	ft_putnbr_base(i, "0123456789abcdef", strlen);
+	else
+		ft_putnbr_base(i, "0123456789abcdef", strlen);
 }

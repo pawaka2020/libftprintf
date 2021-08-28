@@ -1,4 +1,4 @@
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_printf(const char *str, ...)
 {
@@ -15,10 +15,8 @@ int	ft_printf(const char *str, ...)
 		else
 		{
 			c = *(str +1);
-			if (ft_partof(c, "csp%"))
-				ft_printspec1(c, arg, &strlen);
-			else if (ft_partof(c, "diuxX"))
-				ft_printspec2(c, arg, &strlen);
+			if (ft_partof(c, "csp%diuxX"))
+				ft_printspec(c, arg, &strlen);
 			str++;
 		}
 		str++;
